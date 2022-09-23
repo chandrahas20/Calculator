@@ -33,3 +33,10 @@ steps:
     SourceFolder: '$(system.defaultworkingdirectory)'
     Contents: '**/*.jar)'
     TargetFolder: '$(build.artifactsagingdirectory)'
+
+- task: S3Upload@1
+  inputs:
+    awsCredentials: 'aws-service'
+    regionName: 'us-east-1'
+    bucketName: 'azure-buk'
+    globExpressions: '**'
