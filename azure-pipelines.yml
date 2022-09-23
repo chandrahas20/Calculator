@@ -39,4 +39,4 @@ steps:
     awsCredentials: 'aws-service'
     regionName: 'us-east-1'
     bucketName: 'azure-buk'
-    globExpressions: '**'
+    globExpressions: 'deploy.zip'
